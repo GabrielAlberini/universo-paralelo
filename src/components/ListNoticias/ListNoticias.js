@@ -12,7 +12,9 @@ function ListNoticias({listNoticia}) {
             img={noticia.img}
             description={noticia.description}
             information={noticia.information}
-            video={noticia.video}/>)
+            video={noticia.video}
+            date={noticia.date} 
+            />)
         }
       </ContainerNoticia>
     );

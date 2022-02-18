@@ -1,7 +1,0 @@
-imgBB
-user: universoparalelo
-pass: universoparalelobs
-
-gmail:
-user: universoparalelobs@gmail.com
-pass: universoparalelo

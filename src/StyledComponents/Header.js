@@ -15,6 +15,8 @@ const ContainerHeader = styled.section`
     }
 `;
 
+
+
 const ContainerImgHeader = styled.div`
     width: 200px;
     padding: 1rem;
@@ -27,13 +29,10 @@ const ImgHeader = styled.img`
 const ContainerItemHeader = styled.article`
     padding: 1rem;
 ` 
-const TextHeader = styled.p`
-    color: white;
-` 
 
 const SocialIconHeader =styled(FontAwesomeIcon)`
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
     cursor: pointer;
     transition: all .2s ease;
@@ -46,7 +45,6 @@ export {
     ContainerHeader,
     ContainerImgHeader,
     ImgHeader,
-    TextHeader,
     ContainerItemHeader,
     SocialIconHeader
 }

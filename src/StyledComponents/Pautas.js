@@ -8,8 +8,8 @@ const ContainerListPautas = styled.article`
 
 const ContainerImgPautas = styled.article`
     width: 90%;
-    height: 130px;
-    margin: 1rem auto;
+    height: auto;
+    margin: 1rem auto 0 auto;
 `
 
 const ImgPauta = styled.img`
