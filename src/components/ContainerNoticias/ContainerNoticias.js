@@ -12,10 +12,11 @@ async function getPautas() {
 
 function ContainerNoticias() {
   const [listNoticia, setListNoticia] = useState([])
-  console.log(listNoticia)
+  console.log("listNoticias", listNoticia)
   
   useEffect(()=> {
     getPautas(db).then((res) => setListNoticia(res))
+
   }, [])
 
     return (

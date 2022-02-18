@@ -6,15 +6,7 @@ function ListNoticias({listNoticia}) {
     return (
       <ContainerNoticia>
         {
-          listNoticia.map(noticia => <Noticia 
-            key={noticia.titulo} 
-            titulo={noticia.titulo}
-            img={noticia.img}
-            description={noticia.description}
-            information={noticia.information}
-            video={noticia.video}
-            date={noticia.date} 
-            />)
+          listNoticia.map(noticia => <Noticia key={noticia.titulo} dataNoticia={noticia} />)
         }
       </ContainerNoticia>
     );
