@@ -1,24 +1,36 @@
 import { ListNoticias } from '../ListNoticias/ListNoticias'
-import { ContainerListNoticias } from '../../StyledComponents/Noticias'
+import { ContainerListNoticias, ContainerLouder } from '../../StyledComponents/Noticias'
 import { useEffect, useState } from "react";
 import { db, getProducts } from "../../FirebaseConfig/FireBaseConfig";
+import {CircularProgress} from '@mui/material'
 
 function ContainerNoticias() {
   const [listNoticia, setListNoticia] = useState([])
+  const [louder, setLouder] = useState(true)
   
   useEffect(()=> {
     getProducts(db).then((data) => {
-      console.log("recibp", data)
       setListNoticia(data)
+      setLouder(false)
   }).catch((err)=> {
       alert(err)
   })
   }, [])
 
     return (
-      <ContainerListNoticias>
-        <ListNoticias listNoticia={listNoticia}/>
-      </ContainerListNoticias>
+      <>
+      {
+        louder
+        ?
+        <ContainerLouder>
+          <CircularProgress color="success" />
+        </ContainerLouder>
+        :
+        <ContainerListNoticias>
+          <ListNoticias listNoticia={listNoticia}/>
+        </ContainerListNoticias>
+      }
+      </>
     );
   }
   

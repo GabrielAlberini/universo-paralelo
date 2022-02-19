@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const ContainerLouder = styled.section`
+    width: 100%;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const ContainerListNoticias = styled.section`
     width: 100%;
     padding: 2rem 1rem;
@@ -52,6 +61,7 @@ const DateNoticia = styled.p`
 `
 
 export {
+    ContainerLouder,
     ContainerListNoticias,
     ContainerNoticia,
     NoticiaItem,
