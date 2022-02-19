@@ -17,14 +17,15 @@ const TituloNoticiaDetail = styled.p`
 `
 
 const ContainerImagenNoticiaDetail = styled.div`
-    width: 300px;
-    height: 400px;
+    width: 60%;
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `
 
 const ImagenNoticiaDetail = styled.img`
     width: 100%;
     height: auto;
-    object-fit: contain;
 `
 
 const InfoNoticiaDetail = styled.p`

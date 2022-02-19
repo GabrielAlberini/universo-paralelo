@@ -3,12 +3,16 @@ import styled from "styled-components";
 const ContainerListNoticias = styled.section`
     width: 100%;
     padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const ContainerNoticia = styled.article`
-    width: 100%; 
+    width: 92%; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
     }
@@ -16,7 +20,7 @@ const ContainerNoticia = styled.article`
 
 /*Noticia Item*/ 
 const NoticiaItem = styled.section`
-    width: 300px;
+    width: 100%;
     higth: 300px;
     display: flex;
     flex-direction: column;
@@ -36,7 +40,6 @@ const ImgNoticia = styled.img`
 `
 
 const TituloNoticiaItem = styled.h3`
-    text-align: center;
     font-size: 1.5rem;
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
@@ -44,6 +47,7 @@ const TituloNoticiaItem = styled.h3`
 `
 
 const DateNoticia = styled.p`
+    color: #5b5657;
     margin-top: 0;
 `
 

@@ -18,14 +18,19 @@ function NoticiaDetail({data}) {
           <InfoNoticiaDetail>
             {information}
           </InfoNoticiaDetail>
-          {fotos && 
-          <ContainerFotosNoticias 
-            listFotos={fotos}
+          {fotos 
+            && 
+            <ContainerFotosNoticias 
+              listFotos={fotos}
           />}
-          <LinkVideoNoticiaDetail 
-            href={video}>
-              VER NOTICIA
-          </LinkVideoNoticiaDetail>
+          {
+            video
+            &&
+            <LinkVideoNoticiaDetail 
+              href={video}>
+                VER NOTICIA
+            </LinkVideoNoticiaDetail>
+          }
       </ContainerNoticiaDetail>
     );
   }
