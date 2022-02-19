@@ -8,12 +8,12 @@ function ContainerNoticias() {
   const [listNoticia, setListNoticia] = useState([])
   const [louder, setLouder] = useState(true)
   
-  useEffect(()=> {
+  useEffect(() => {
     getProducts(db).then((data) => {
       setListNoticia(data)
       setLouder(false)
   }).catch((err)=> {
-      alert(err)
+      console.log(err)
   })
   }, [])
 
