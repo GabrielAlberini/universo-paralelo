@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 const ContainerListNoticias = styled.section`
-    width: 90%;
-    margin: 2rem auto 0 auto;
+    width: 100%;
+    padding: 2rem 1rem;
 `
 
 const ContainerNoticia = styled.article`
+    width: 100%; 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 /*Noticia Item*/ 
@@ -19,12 +23,36 @@ const NoticiaItem = styled.section`
     margin: 0 auto;
 `
 
-const TituloNoticiaItem = styled.h3`
+const ContainerImgNoticia = styled.div`
     width: 100%;
+    max-height: 220px; 
+    overflow: hidden;
+`
+
+const ImgNoticia = styled.img`
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+`
+
+const TituloNoticiaItem = styled.h3`
+    text-align: center;
+    font-size: 1.5rem;
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+`
+
+const DateNoticia = styled.p`
+    margin-top: 0;
 `
 
 export {
     ContainerListNoticias,
     ContainerNoticia,
-    NoticiaItem
+    NoticiaItem,
+    ContainerImgNoticia,
+    ImgNoticia,
+    TituloNoticiaItem,
+    DateNoticia
 }

@@ -7,6 +7,12 @@ function ContainerFotosNoticias({listFotos}) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem;
+        @media (max-width: 480px) {
+          flex-direction: column;
+          height: 600px;
+          gap: 1rem;
+      }
     `
 
     const FotosNoticia = styled.img`
