@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Noticia = ({dataNoticia}) => {
     const {img, titulo, date, id} = dataNoticia;
-    
-    const tituloUrl = titulo.split("-")
-    const tituloHash = tituloUrl.join("-")
-    
-    console.log(titulo.split("-"))
+    console.log("ID", id)
+  
     return (
       <NoticiaItem>
-        <Link to={`/noticia/${tituloHash}`}>
+        <Link to={`/noticia/${id}`}>
           <div style={{width: "100%", maxHeight: "220px", overflow: "hidden"}}>
             <img style={{width: "100%", height: "100%", objectFit: "cover"}} src={img} alt="" />
           </div>

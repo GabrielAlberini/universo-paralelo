@@ -1,22 +1,18 @@
 import { ListNoticias } from '../ListNoticias/ListNoticias'
 import { ContainerListNoticias } from '../../StyledComponents/Noticias'
 import { useEffect, useState } from "react";
-import { db, collection, getDocs } from "../../FirebaseConfig/FireBaseConfig";
-
-async function getPautas() {
-  const noticiasCol = collection(db, "noticias");
-  const noticiasSnapShot = await getDocs(noticiasCol);
-  const noticiasList = noticiasSnapShot.docs.map(noticia => noticia.data())
-  return noticiasList;
-}
+import { db, getProducts } from "../../FirebaseConfig/FireBaseConfig";
 
 function ContainerNoticias() {
   const [listNoticia, setListNoticia] = useState([])
-  console.log("listNoticias", listNoticia)
   
   useEffect(()=> {
-    getPautas(db).then((res) => setListNoticia(res))
-
+    getProducts(db).then((data) => {
+      console.log("recibp", data)
+      setListNoticia(data)
+  }).catch((err)=> {
+      alert(err)
+  })
   }, [])
 
     return (

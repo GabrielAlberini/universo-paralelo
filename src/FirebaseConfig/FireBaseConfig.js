@@ -20,4 +20,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
-export { db, collection, getDocs }
+//Get products trae toda la lista de la base de datos
+async function getProducts(db) {
+    const productsCol = collection(db, 'noticias');
+    const prductsSnapshot = await getDocs(productsCol);
+    const productsList = prductsSnapshot.docs.map(doc => {
+        const product = doc.data();
+        product.id = doc.id;
+        return product;
+    });
+    return productsList;
+}
+
+export { db, collection, getDocs, getProducts }
