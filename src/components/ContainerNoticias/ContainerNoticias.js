@@ -2,7 +2,7 @@ import { ListNoticias } from '../ListNoticias/ListNoticias'
 import { ContainerListNoticias, ContainerLouder } from '../../StyledComponents/Noticias'
 import { useEffect, useState } from "react";
 import { db, getProducts } from "../../FirebaseConfig/FireBaseConfig";
-import {CircularProgress} from '@mui/material'
+import {CircularProgress} from '@mui/material';
 
 function ContainerNoticias() {
   const [listNoticia, setListNoticia] = useState([])
