@@ -8,7 +8,7 @@ const ContainerHeader = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #222;
+    background-color: black;
     @media (max-width: 480px) {
         flex-direction: column;
         text-align: center;
@@ -30,6 +30,10 @@ const ContainerItemHeader = styled.article`
     padding: 1rem;
 ` 
 
+const LinkIconSocial = styled.a`
+
+`
+
 const SocialIconHeader =styled(FontAwesomeIcon)`
     color: white;
     font-size: 1.5rem;
@@ -46,5 +50,6 @@ export {
     ContainerImgHeader,
     ImgHeader,
     ContainerItemHeader,
+    LinkIconSocial,
     SocialIconHeader
 }

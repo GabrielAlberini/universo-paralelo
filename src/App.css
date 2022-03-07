@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'universo';
+    src: url('../public/font/Essay_Font_Family/EssayPosterHeavyRegular.otf'); 
+}
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #e5e5e5;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'universo';
 }
 

@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBD7D3;
+    
+}
+
+.cont-sombra {
+    width: 200px;
+    height: 7px;
+    background-color: #a1a1a136;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    
+}
+
+.cont-img {
+    width: 400px;
+    height: auto;
+    animation-name: rotation;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@keyframes rotation {
+    0% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
+  }

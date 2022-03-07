@@ -1,4 +1,4 @@
-import { Home } from '../Screens/Home'
+import { Home } from '../Screens/Home/Home'
 import { ContainerNoticiaDetail } from '../components/ContainerNoticiaDetail/ContainerNoticiaDetail'
 import { NotFound } from '../Screens/NotFound/NotFound'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
