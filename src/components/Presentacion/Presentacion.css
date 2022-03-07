@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #DBD7D3;
+    background-color: black;
     
 }
 
@@ -31,6 +31,10 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+
+.title {
+    color: white;
 }
 
 @keyframes rotation {
