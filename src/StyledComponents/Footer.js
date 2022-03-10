@@ -30,21 +30,21 @@ const ContainerIconFooter = styled.div`
 `
 
 const IconFooter = styled(FontAwesomeIcon)`
-    color: orange;
+    color: #EDD338;
     cursor: pointer;
     font-size: 2rem;
     transition: all .2s ease;
     &:hover {
-        color: white;
+        color: #F4C134;
     }
 `
 
 const LinkItemFooter = styled.a`
-    color: orange;
+    color: #EDD338;
     text-decoration: none;
     transition: all .2s ease;
     &:hover {
-        color: green;
+        color: #F4C134;
     }
 `
 

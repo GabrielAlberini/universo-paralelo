@@ -35,13 +35,13 @@ const LinkIconSocial = styled.a`
 `
 
 const SocialIconHeader =styled(FontAwesomeIcon)`
-    color: white;
+    color: #F4C134;
     font-size: 1.5rem;
     padding: 1rem;
     cursor: pointer;
-    transition: all .2s ease;
+    transition: all .4s ease;
     &:hover {
-        color: orange;
+        color: #0088CD;
     }
 `
 

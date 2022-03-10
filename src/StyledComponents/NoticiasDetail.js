@@ -51,8 +51,9 @@ const LinkVideoNoticiaDetail = styled.a`
     border: 1px solid black;
     padding: .5rem;
     border-radius: 20px; 
+    color: #F4C134;
     &:hover {
-        color: black;
+        color: #EDD338;
     }
 `
 
