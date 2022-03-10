@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto:wght@400;700&display=swap');
 @font-face {
-    font-family: 'universo';
+    font-family: 'universo-title';
     src: url('../public/font/Essay_Font_Family/EssayPosterHeavyRegular.otf'); 
+}
+@font-face {
+    font-family: 'universo-txt';
+    src: url('../public/font/Txt/MontserratRegular.ttf'); 
 }
 
 * {
@@ -12,8 +16,12 @@ body {
     background-color: #e5e5e5;
 }
 
+p{
+   font-family: 'universo-txt';
+}
+
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'universo';
+    font-family: 'universo-title';
 }
 

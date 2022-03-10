@@ -9,9 +9,9 @@ const ContainerNoticiaDetail = styled.div`
     padding: 1rem;
 `
 
-const TituloNoticiaDetail = styled.p`
+const TituloNoticiaDetail = styled.h3`
     max-width: 700px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     @media (max-width: 480px) {
         text-align: center;
@@ -42,11 +42,15 @@ const InfoNoticiaDetail = styled.p`
 `
 
 const LinkVideoNoticiaDetail = styled.a`
+    width: 250px;
     text-decoration: none;
+    text-align: center;
     font-size: 2rem;
-    color: orange;
     padding-top: 2rem;
     transition: .2s ease;
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 20px; 
     &:hover {
         color: black;
     }
