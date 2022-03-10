@@ -10,7 +10,9 @@ const ContainerNoticiaDetail = styled.div`
 `
 
 const TituloNoticiaDetail = styled.p`
-    font-size: 3rem;
+    max-width: 700px;
+    font-size: 2.5rem;
+    text-align: center;
     @media (max-width: 480px) {
         text-align: center;
     }

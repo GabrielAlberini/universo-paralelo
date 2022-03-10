@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const ContainerBanner = styled.section`
     width: 100%;
-    height: 100%;
     display: flex;
-`;
-
+    `;
+    
 const ImgBanner = styled.img`
-    max-width: 100%;
+    width: 100%;
     height: 100%;
+    filter: grayscale(.3);
 `;
 
 export {

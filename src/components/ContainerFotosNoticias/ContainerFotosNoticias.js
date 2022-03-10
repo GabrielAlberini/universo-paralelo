@@ -2,23 +2,22 @@ import styled from "styled-components";
 
 function ContainerFotosNoticias({listFotos}) {
     const ContainerListFotosNoticia = styled.article`
-        width: 100%;
-        height: 200px;
+        max-width: 900px;
+        height: auto;
         display: flex;
-        justify-content: space-between;
+        flex: wrap;
         align-items: center;
+        gap: 1rem;
         padding: 1rem;
         @media (max-width: 480px) {
+          display: flex;
           flex-direction: column;
-          height: 600px;
-          gap: 1rem;
       }
     `
 
     const FotosNoticia = styled.img`
         width: 100%;
         height: 100%;
-        object-fit: contain;
     `
 
      return (

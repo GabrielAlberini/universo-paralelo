@@ -18,7 +18,7 @@ const ContainerHeader = styled.section`
 
 
 const ContainerImgHeader = styled.div`
-    width: 200px;
+    width: 250px;
     padding: 1rem;
 `;
 
