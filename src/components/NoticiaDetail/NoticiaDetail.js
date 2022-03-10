@@ -34,5 +34,5 @@ function NoticiaDetail({data}) {
       </ContainerNoticiaDetail>
     );
   }
-  
+
   export {NoticiaDetail};

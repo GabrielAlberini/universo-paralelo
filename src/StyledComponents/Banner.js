@@ -8,7 +8,6 @@ const ContainerBanner = styled.section`
 const ImgBanner = styled.img`
     width: 100%;
     height: 100%;
-    filter: grayscale(.3);
 `;
 
 export {
