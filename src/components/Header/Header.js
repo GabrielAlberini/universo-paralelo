@@ -31,9 +31,9 @@ const Header = () => {
       <ContainerHeader>
         <ContainerImgHeader>
         <Link to={`/`}>
-        <ImgHeader src="https://i.ibb.co/TqHyYsB/logo.jpg" alt="logo de universo paralelo" />
+        <ImgHeader src="https://i.ibb.co/KyzRyd6/logo.png " alt="logo de universo paralelo" />
         </Link>
-          
+
         </ContainerImgHeader>
         <ContainerItemHeader>
             <IFrameSpotify />

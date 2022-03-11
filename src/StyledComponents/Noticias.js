@@ -49,7 +49,7 @@ const ImgNoticia = styled.img`
 `
 
 const TituloNoticiaItem = styled.h3`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
     }
