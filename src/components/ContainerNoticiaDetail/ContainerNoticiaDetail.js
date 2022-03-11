@@ -37,7 +37,7 @@ function ContainerNoticiaDetail() {
 
     return (
       <Layout>
-      <ContainerPautas />
+      {/* <ContainerPautas /> */}
           <>
           {
             loader
