@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IFrameSpotify } from '../IFrameSpotify/IFrameSpotify';
 import { ContainerHeader, ContainerImgHeader, ImgHeader, SocialIconHeader, ContainerItemHeader, LinkIconSocial } from '../../StyledComponents/Header';
-import { faFacebook, faWhatsapp, faInstagram, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faWhatsapp, faInstagram, faTwitter, faYoutube, faGooglePlay} from '@fortawesome/free-brands-svg-icons';
 
 const SOCIAL_LINK = [
   {
@@ -10,7 +10,7 @@ const SOCIAL_LINK = [
   },
   {
     icon: faWhatsapp,
-    link: '+5493425337915'
+    link: 'https://wa.me/+5493425337915'
   },
   {
     icon: faInstagram,
@@ -24,6 +24,10 @@ const SOCIAL_LINK = [
     icon: faYoutube,
     link: 'https://www.youtube.com/channel/UC-aGOJT37x_m2aX1j5oOCKA/featured'
   },
+  {
+    icon: faGooglePlay,
+    link: 'https://play.google.com/store/apps/details?id=com.questreaming.radiohalley'
+  }
 ]
 
 const Header = () => {
