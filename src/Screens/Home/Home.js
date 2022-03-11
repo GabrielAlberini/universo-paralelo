@@ -5,7 +5,7 @@ import { ContainerNoticias } from '../../components/ContainerNoticias/ContainerN
 const Home = () => {
     return(
         <Layout>
-            <ContainerPautas />
+            {/* <ContainerPautas /> */}
             <ContainerNoticias />
         </Layout>
     )
