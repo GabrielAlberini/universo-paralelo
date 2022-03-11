@@ -43,6 +43,7 @@ const ContainerImgNoticia = styled.div`
     overflow: hidden;
     transition: .3s ease;
     border-radius: 5px;
+    display: flex;
     &:hover {
         box-shadow: -8px 10px 12px -11px rgba(0,0,0,0.75);
         -webkit-box-shadow: -8px 10px 12px -11px rgba(0,0,0,0.75);
