@@ -10,7 +10,7 @@ const SOCIAL_LINK = [
   },
   {
     icon: faWhatsapp,
-    link: 'https://wa.me/+5493425337915'
+    link: 'https://wa.me/+5493425021277?text=Te comunicaste con universo paralelo! Por aquí podes 1) Dejarnos tu comentario si estás escuchando en vivo o en podcast por Spotif 2) Si te interesa publicitar en el programa, dejanos tu mensaje. 3) Si querés salir al aire, contános tu historia y nuestra producción se contactará con vos.Muchas gracias!💫'
   },
   {
     icon: faInstagram,
