@@ -15,6 +15,7 @@ const ContainerListNoticias = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    
 `
 
 const ContainerNoticia = styled.article`
@@ -40,6 +41,14 @@ const ContainerImgNoticia = styled.div`
     width: 100%;
     max-height: 220px; 
     overflow: hidden;
+    transition: .3s ease;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: -8px 10px 12px -11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -8px 10px 12px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: -8px 10px 12px -11px rgba(0,0,0,0.75);
+        transform: scale(1.01);
+    }
 `
 
 const ImgNoticia = styled.img`
