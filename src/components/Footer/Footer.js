@@ -10,10 +10,6 @@ function Footer() {
           <ContainerIconFooter>
             <IconFooter icon={faInstagram} /> 
           </ContainerIconFooter>
-        </ItemFooter>
-        <ItemFooter>
-          <TxtItemFooter>¿Que días estamos?</TxtItemFooter>
-          <TxtItemFooter>Programación</TxtItemFooter>
         </ItemFooter> 
         <ItemFooter>
           <TxtItemFooter>Universo Paralelo</TxtItemFooter>
