@@ -16,6 +16,7 @@ import {
   faYoutube,
   faGooglePlay,
 } from "@fortawesome/free-brands-svg-icons";
+import {faCirclePlay} from '@fortawesome/free-regular-svg-icons'
 
 const SOCIAL_LINK = [
   {
@@ -42,6 +43,10 @@ const SOCIAL_LINK = [
     icon: faGooglePlay,
     link: "https://play.google.com/store/apps/details?id=com.questreaming.radiohalley",
   },
+  {
+    icon: faCirclePlay,
+    link: "https://radiohalley.com.ar/",
+  },
 ];
 
 const Header = () => {
@@ -59,7 +64,7 @@ const Header = () => {
         <IFrameSpotify />
       </ContainerItemHeader>
       <ContainerItemHeader>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
           {SOCIAL_LINK.map((socialNetwork) => (
             <LinkIconSocial
               key={socialNetwork.link}
