@@ -37,7 +37,7 @@ function Footer() {
         <TxtItemFooter>
           Powered by{" "}
           <LinkItemFooter
-            href="https://www.linkedin.com/in/gabriel-alberini/"
+            href="https://gabrielalberini.com.ar"
             target="_blank"
             rel="noreferrer"
           >
