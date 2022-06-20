@@ -15,6 +15,7 @@ import {
   faTwitter,
   faYoutube,
   faGooglePlay,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import {faCirclePlay} from '@fortawesome/free-regular-svg-icons'
 
@@ -46,6 +47,10 @@ const SOCIAL_LINK = [
   {
     icon: faCirclePlay,
     link: "https://radiohalley.com.ar/",
+  },
+  {
+    icon: faTiktok,
+    link: "https://www.tiktok.com/@radio.universoparalelo",
   },
 ];
 
