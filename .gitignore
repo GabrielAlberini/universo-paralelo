@@ -10,6 +10,7 @@
 
 # credentials
 .env
+.env.production
 
 # production
 /build
