@@ -13,24 +13,23 @@ function ContainerNoticiaDetail() {
   const [loader, setLoader] = useState(true);
   const { id } = useParams();
 
-  async function getProducts(db) {
-    //Aquí debajo va en orden: La conexón, nombre de la colección y parametro para efectuar el filtro.
-    const docRef = doc(db, "noticias", id);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-      const noticia = docSnap.data();
-      noticia.id = id;
-      setNoticia(noticia);
-      setLoader(false);
-    } else {
-      //En caso de que falle la llamada o no exista el doc.
-      console.log("No such document!");
-    }
-  }
-
   useEffect(() => {
+    const getProducts = async (db) => {
+      //Aquí debajo va en orden: La conexón, nombre de la colección y parametro para efectuar el filtro.
+      const docRef = doc(db, "noticias", id);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const noticia = docSnap.data();
+        noticia.id = id;
+        setNoticia(noticia);
+        setLoader(false);
+      } else {
+        //En caso de que falle la llamada o no exista el doc.
+        console.log("No such document!");
+      }
+    };
     getProducts(db);
-  }, []);
+  }, [id]);
 
   return (
     <Layout>
