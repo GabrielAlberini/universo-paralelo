@@ -3,7 +3,7 @@ import { ContainerBanner, ImgBanner } from "../../StyledComponents/Banner";
 const Banner = () => {
   return (
     <ContainerBanner>
-      <ImgBanner src="https://i.ibb.co/pZ7TH4Q/1-con-tomate-nueva.jpg" />
+      <ImgBanner src="https://i.ibb.co/7t8xRwc/FINAL-NUEVO-SITIO-WEB.jpg" />
     </ContainerBanner>
   );
 };
